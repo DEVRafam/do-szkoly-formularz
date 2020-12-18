@@ -1,0 +1,50 @@
+@keyframes bodyBgAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    animation: bodyBgAnimation infinite alternate 5s linear;
+}
+main#content-wrap {
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+form#main-form,
+section#highlight {
+    padding: 20px 40px;
+}
+form#main-form {
+    width: 40%;
+    background-color: #fff;
+}
+section#highlight {
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.9);
+}

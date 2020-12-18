@@ -1,0 +1,376 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes bodyBgAnimation {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+}
+
+@keyframes bodyBgAnimation {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(131, 58, 180);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(131, 58, 180, 1)), color-stop(50%, rgba(253, 29, 29, 1)), to(rgba(252, 176, 69, 1)));
+    background: -o-linear-gradient(left, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-animation: bodyBgAnimation infinite alternate 5s linear;
+    animation: bodyBgAnimation infinite alternate 5s linear;
+}
+main#content-wrap {
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1200px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+form#main-form,
+section#highlight {
+    padding: 20px 40px;
+}
+form#main-form {
+    width: 40%;
+    background-color: #fff;
+}
+section#highlight {
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@-webkit-keyframes headerBottomLine {
+    from {
+        -webkit-transform: scaleX(1) skewX(-45deg);
+        transform: scaleX(1) skewX(-45deg);
+    }
+    to {
+        -webkit-transform: scaleX(1.7) skewX(-45deg);
+        transform: scaleX(1.7) skewX(-45deg);
+    }
+}
+@keyframes headerBottomLine {
+    from {
+        -webkit-transform: scaleX(1) skewX(-45deg);
+        transform: scaleX(1) skewX(-45deg);
+    }
+    to {
+        -webkit-transform: scaleX(1.7) skewX(-45deg);
+        transform: scaleX(1.7) skewX(-45deg);
+    }
+}
+/*  */
+@-webkit-keyframes formBackgroundAnimation {
+    from {
+        background-position: center 20%;
+    }
+    to {
+        background-position: center 60%;
+    }
+}
+@keyframes formBackgroundAnimation {
+    from {
+        background-position: center 20%;
+    }
+    to {
+        background-position: center 60%;
+    }
+}
+form#main-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+form#main-form::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/img/form-bg.jpg");
+    opacity: 0.1;
+    background-position: center;
+    background-size: cover 130%;
+    background-repeat: no-repeat;
+    -webkit-animation: formBackgroundAnimation infinite alternate 12s linear;
+    animation: formBackgroundAnimation infinite alternate 12s linear;
+}
+h1,
+div.form-group,
+div.smaller-inputs-wrap {
+    position: relative;
+    z-index: 2;
+}
+h1 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    letter-spacing: 3px;
+    position: relative;
+}
+h1::after {
+    content: "";
+    bottom: 5px;
+    height: 5px;
+    width: 30%;
+    left: 5%;
+    position: absolute;
+    background-color: #ff7979;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-animation: headerBottomLine infinite alternate 3s;
+    animation: headerBottomLine infinite alternate 3s;
+}
+label {
+    margin-right: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    letter-spacing: 2px;
+}
+div.form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+div.smaller-inputs-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+div.smaller-inputs-wrap > div.form-group {
+    width: 45%;
+}
+div.form-group.phone > div.wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+div.form-group.phone > div.wrap > span.phone-prefix {
+    background-color: #ff7979;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+div.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+/*  */
+div.footer input[type="checkbox"] {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+div.footer label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*  */
+input[type="text"],
+input[type="number"] {
+    height: 40px;
+    padding: 2px 10px;
+    border: 2px solid #ff7979;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+button:focus,
+input:focus {
+    background-color: #ff7979;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+}
+button {
+    color: #ff7979;
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #ff7979;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #ff7979;
+    color: #fff;
+}
+section#highlight {
+    width: 55%;
+    position: relative;
+}
+section#highlight::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-image: url("/src/img/cart.svg");
+    background-position: center;
+    background-size: cover;
+    color: #ff7979;
+}
+
+section#highlight div.image {
+    width: 100%;
+    height: 300px;
+    background-image: url("/src/img/ps5.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+section#highlight div.price {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+}
+section#highlight div.price p {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    padding: 5px 20px 5px 40px;
+    border-radius: 5px;
+}
+
+section#highlight div.price p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #ff7979;
+    border-radius: 2px;
+}
+section#highlight > div.discount > div.wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+section#highlight > div.discount > div.wrap > button {
+    margin-left: 20px;
+}

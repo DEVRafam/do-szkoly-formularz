@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Super formularz</title>
+        <!-- potrzebny css -->
+        <link rel="stylesheet" href="/public/css/main.css" />
+    </head>
+    <!--  -->
+    <body>
+        <main id="content-wrap">
+            <form action="" id="main-form">
+                <h1>Dostawa artykułu</h1>
+                <!--  -->
+                <div class="form-group">
+                    <label for="imie">Imię</label>
+                    <input type="text" id="imie" />
+                </div>
+                <!--  -->
+                <div class="form-group">
+                    <label for="nazwisko">Nazwisko</label>
+                    <input type="text" id="nazwisko" />
+                </div>
+                <!--  -->
+                <div class="form-group">
+                    <label for="kraj">Miasto</label>
+                    <input type="text" id="kraj" />
+                </div>
+                <!--  -->
+                <div class="smaller-inputs-wrap">
+                    <div class="form-group small">
+                        <label for="adres">Adres</label>
+                        <input type="text" id="adres" />
+                    </div>
+                    <!--  -->
+                    <div class="form-group small">
+                        <label for="kod">Kod pocztowy</label>
+                        <input type="text" maxlength="6" id="kod" />
+                    </div>
+                </div>
+                <!--  -->
+                <div class="form-group phone">
+                    <label for="phone">Telefon</label>
+                    <div class="wrap">
+                        <span class="phone-prefix">+48</span>
+                        <input type="text" maxlength="11" id="phone" />
+                    </div>
+                </div>
+                <!--  -->
+                <div class="form-group footer">
+                    <p>
+                        <span> Zapoznałem się z</span>
+                        <a href="https://ckziuwadowice.pl/" target="_blank"> regulaminem </a>
+                        <span>oraz wyrażam zgodę na przetwarzanie danych osobowych</span>
+                    </p>
+                    <div style="display: flex">
+                        <label for="accept">Akceptuję </label>
+                        <input type="checkbox" id="accept" />
+                    </div>
+                    <button id="form-submit">Kontynuuj</button>
+                </div>
+                <!--  -->
+            </form>
+            <section id="highlight">
+                <h2>Szczegóły artykułu</h2>
+                <div class="image"></div>
+                <h3>Playstation 5</h3>
+                <div class="price">
+                    <p>
+                        <span>Wartość towarów</span>
+                        <strong class="price-part">2299.99 zł</strong>
+                    </p>
+                    <p>
+                        <span>Koszt transportu</span>
+                        <strong class="price-part">16.49 zł</strong>
+                    </p>
+                    <p>
+                        <span>Koszt płatności</span>
+                        <strong class="price-part">4.99 zł</strong>
+                    </p>
+                    <p>
+                        <span>Rabat</span>
+                        <strong class="price-part">0 zł</strong>
+                    </p>
+                    <p>
+                        <span>Suma</span>
+                        <strong id="price-sum"></strong>
+                    </p>
+                </div>
+                <div class="form-group discount">
+                    <label for="discount">Kod rabatowy:</label>
+                    <div class="wrap">
+                        <input type="text" id="discount" />
+                        <button>Dodaj</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <!--  -->
+    <script src="/src/js/main.js" type="module"></script>
+</html>
