@@ -28,7 +28,7 @@ form#main-form::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/src/img/form-bg.jpg");
+    background-image: url("./src/img/form-bg.jpg");
     opacity: 0.1;
     background-position: center;
     background-size: cover 130%;

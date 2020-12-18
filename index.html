@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Super formularz</title>
         <!-- potrzebny css -->
-        <link rel="stylesheet" href="/public/css/main.css" />
+        <link rel="stylesheet" href="./public/css/main.css" />
     </head>
     <!--  -->
     <body>
@@ -51,7 +51,7 @@
                 <div class="form-group footer">
                     <p>
                         <span> Zapoznałem się z</span>
-                        <a href="https://ckziuwadowice.pl/" target="_blank"> regulaminem </a>
+                        <a href="https:ckziuwadowice.pl/" target="_blank"> regulaminem </a>
                         <span>oraz wyrażam zgodę na przetwarzanie danych osobowych</span>
                     </p>
                     <div style="display: flex">
@@ -99,5 +99,19 @@
         </main>
     </body>
     <!--  -->
-    <script src="/src/js/main.js" type="module"></script>
+    <!-- SKRYPTY -->
+    <!--  -->
+    <!-- skrypt do obslugi inputa od kodu pocztowego -->
+    <script src="./src/js/zipCodeInput.js"></script>
+    <!-- skrypt do obslugi inputa od numeru telefonu -->
+    <script src="./src/js/phoneNumberInput.js"></script>
+    <!-- skrypt do ewentualnej walidacji lub ogolnie
+            zarzadzania stanem formularzu przed wyslaniem -->
+    <script src="./src/js/submitForm.js"></script>
+    <!-- zczytanie wszystkich cen z elementow o podanej klasie
+                a nastepnie ustawienie textu opdowieniego elemenut na obliczona wartossc -->
+    <script src="./src/js/sumPriceOnHighlight.js"></script>
+    <!--  -->
+    <!--  -->
+    <!--  -->
 </html>
